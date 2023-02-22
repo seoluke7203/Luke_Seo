@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="intro_background">
+        <div class="header">
+          <ul class="nav">
+            <li class = "headeritem">Projects</li>
+            <li class = "headeritem">Experience</li>
+            <li class = "headeritem">Contact Info</li>
+          </ul>
+        </div>
+      </div>
+      <!-- end of intro -->
+      <ul class="amount">
+        <li>
+          <div>
+            <div class="contents1"></div>
+            <img src="images/face.jpg">
+          </div>
+      </ul>
+          <div  class = "basic_info">
+            <h1 class="basic_info_title">Luke (In Ho) Seo</h1>
+            <h2 class="resume_download"> <a href = "files/Resume - Feb 21 2023.pdf" download="Resume.pdf">Download my Resume</a></h2>
+          </div>
+        </li>
+      <!-- end of box -->
+      <div class="main_text0">
+        <h1>01. PROJECTS</h1>
+        <ul class="icons">
+          <li>
+            <div class="screen1"><img src="images/detail1_1.jpg" /></div>
+            <div class="contents1_title">SFU-Transiter</div>
+            <div class="contents1_body">Android Application (Kotlin)</div>
+            <div class="detail"><button id = "detail_1" onclick="getShow(1)">Detail</button></div>
+            
+          </li>
+          <li>
+            <div class="screen1"><img src="images/detail2.jpg" /></div>
+            <div class="contents1_title"> Hillstate Bus-Timer </div>
+            <div class="contents1_body">Android Application (Java)</div>
+            <div class="detail"><button id = "detail_2" onclick="getShow(2)">Detail</button></div>
+          </li>
+          <li>
+            <div class="screen1"><img src="images/detail3.jpg" /></div>
+            <div class="contents1_title"> Photos and Tours</div>
+            <div class="contents1_body">Python Application</div>
+            <div class="detail"><button id = "detail_3" onclick="getShow(3)">Detail</button></div>
+          </li>
+        </ul>
+      </div>
+      <!-- end of project -->
+
+      <div class="service" id="exp1" style="display: none;">
+        <div class="project_image">
+          <img src="images/detail1_1.jpg" />
+        </div>
+        <div class="contents2">
+          <h2>SFU Transiter</h2>
+          <h4>Class Project: CMPT 362</h4>
+          <ul class="languages">
+            <li>- Kotlin</li>
+            <li>- Amazon Web Services (AWS)</li>
+            <li>- Android Studio</li>
+            <li>- BC Translink API</li>
+          </ul>
+          <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quidem dolorum, totam ea alias omnis officia placeat fuga nesciunt, eius aliquid veniam incidunt nobis quis doloribus vel sunt debitis. Suscipit!
+          </main>
+          <nav>
+            <button id = detail_hide onclick=""> Check Screenshots</button>
+            <button id = detail_hide onclick="window.open('https://github.com/Parfaits/SFU-Transiter')"> Visit Github</button>
+            <button id = detail_hide onclick="getHide(1)"> Hide</button>
+
+          </nav>
+        </div>
+
+        <!-- <h4 class = "dates">Oct 2022 - Dec 2022</h4> -->
+        
+      </div>
+
+      <div class="service" id = "exp2" style="display: none;">
+        <div class="project_image">
+          <img src="images/detail2.jpg" />
+        </div>
+        <div class="contents2"> 
+          <h2>Hillstate Bus-Timer</h2>
+          <h4>Personal Project</h4>
+          <ul class="languages">
+            <li>- Java</li>
+            <li>- Korea Transit API</li>
+            <li>- Android Studio</li>
+          </ul>
+          <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quidem dolorum, totam ea alias omnis officia placeat fuga nesciunt, eius aliquid veniam incidunt nobis quis doloribus vel sunt debitis. Suscipit!
+          </main>
+          <nav>
+            <button id = detail_hide onclick=""> Check Screenshots</button>
+            <button id = detail_hide onclick="window.open('https://github.com/seoluke7203/BusTimer')"> Visit Github</button>
+            <button id = detail_hide onclick="getHide(2)"> Hide</button>
+
+        </div>
+      </div>
+
+      <div class="service" id = "exp3" style="display: none;">
+        <div class="project_image">
+          <img src="images/detail3.jpg" height =844.44 />
+        </div>
+        <div class="contents2">
+          <h2>Photos and Tours</h2>
+          <h4>Class Project: CMPT 353</h4>
+          <ul class="languages">
+            <li>- Python</li>
+            <li>- Jupyter Notebook</li>
+            <li>- OpenStreet API, Google Places API</li>
+            <li>- Folium</li>
+          </ul>
+          <main>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quidem dolorum, totam ea alias omnis officia placeat fuga nesciunt, eius aliquid veniam incidunt nobis quis doloribus vel sunt debitis. Suscipit!
+          </main>
+          <nav>
+          <button id = detail_hide onclick=""> Check Screenshots</button>
+          <button id = detail_hide onclick="window.open('https://github.com/theninjawoohoo/OpenStreetMapCMPT353')"> Visit Github</button>
+          <button id = detail_hide onclick="getHide(3)"> Hide</button>
+
+        </div>
+      </div>
+
+
+      <div class="main_text1">
+        <h1>02.EXPERIENCE</h1>
+        <div class="timeline">
+          <div class="timeline_container left_c">
+            <img class = "timeline_icon "src="images/sfu_icon.png">
+            <div class="text-box">
+              <h2> Simon Fraser University</h2>
+              <h3> Computer Science Major</h3>
+              <small>Sep 2016 - Apr 2024</small>
+              <ul>
+                <li>SFU-ZJU Dual Degree Program Entrance Award</li>
+                <li>SFU Entrance Award</li>
+                
+              </ul>
+              <span class="left_container_arrow"></span>
+            </div>
+          </div>
+          <div class="timeline_container right_c">
+            <img class = "timeline_icon "src="images/akcse_logo.png">
+
+            <div class="text-box">
+              <h2>AKSCE</h2>
+              <h4>SFU Association of Korean - Canadian Scientists and Engineers Club</h4>
+              <div class = "jobs_2">
+                <h3 class = "first">Executive: <br><small>Jul 2017 - Aug 2018 </small></br></h3>
+                <h3>Vice President: <br><small>Sep 2020 - Jun 2021</small></br> </h3>
+              </div>
+              <ul>
+                <li>Managed various monthly social and academic meetings of 100~200 people by communicating with
+                  other executives to perform events, resulting in enhancements of creativity and research skills</li>
+                <li>Coordinated with graduates and seniors to foster a learning environment for participants to gain knowledge from inexperienced situations</li>
+                <li>Created and organized meetings of 100~200 people and designated roles for each executive regarding their strength
+                  and abilities.
+                  </li>
+              </ul>
+              <span class="right_container_arrow"></span>
+            </div>
+
+          </div>          
+          <div class="timeline_container left_c">
+            <img class = "timeline_icon "src="images/soldier_icon.png">
+
+            <div class="text-box">
+              <h2>Korean Army</h2>
+              <h4>6th Infantry Division</h4>
+              <div class="jobs">
+                <h3 class = "leader">Squad Leader</h3>
+                <h3>Administrative Clerk , Radio Operator</h3>
+              </div>
+              <small>Oct 2018 - Jun 2020</small>
+              <ul>
+                <li>Organized workflows to reduce unnecessary and repeated jobs by creating efficient routes and algorithms, improved
+                  skills in problem solving and time managing.</li>
+                <li>Conducted team with exceptional team managing skills to successfully complete any given missions and operations in
+                  any circumstances.</li>
+                <li>Managed team members with high flexibility and critical thinking to overcome any conflicts within team members or with
+                  other teams.</li>
+                <li>Demonstrated remarkable responsibility by concentrating on duties to succeed on operations in any severe
+                  environments and obstacles</li>
+
+              </ul>
+              <span class="left_container_arrow"></span>
+            </div>
+
+          </div>
+          <div class="timeline_container right_c">
+            <img class = "timeline_icon "src="images/topreading_icon.jpeg">
+
+            <div class="text-box">
+              <h2>Top Reading English Academy </h2>
+              <h3>Lead Teacher</h3>
+              <small>Sep 2020 - Dec 2021</small>
+              <ul>
+                <li>Introduced and implemented a new diagnosis system to accurately check the progress of students</li>
+                <li>Recognized as a Lead Teacher, with responsibility for coaching and mentoring new teachers by frequently providing advice and instructions</li>
+                <li>Analyzed each student’s personality and strength to educate accordingly so that students could maximize their abilities to learn effectively and efficiently</li>
+              </ul>
+              <span class="right_container_arrow"></span>
+            </div>
+
+          </div>          
+          <div class="timeline_container left_c">
+            <img class = "timeline_icon "src="images/cjsf_icon.png">
+
+            <div class="text-box">
+              <h2>CJSF 90.1 FM Radio</h2>
+              <div class = "jobs_2">
+                <h3 class = "first">Smartphone Application Developer<br><small>May 2022 - Dec 2022 </small></br></h3>
+                <h3>Web Developer<br><small>Jan 2023 - Apr 2023</small></br> </h3>
+              </div>
+              <ul>
+                <li>Developed the first launching application using React Native on Visual Studio for IOS and Android</li>
+                <li>Implemented various features, including retrieving the entire playlist of a program and an automatic news
+                  updating algorithm, both using Web External API via GitLab</li>
+                <li>Refurnished a web page using CSS, Javascript, and Drupal to enhance the UI more clearly and provide
+                  prioritized information fast and easily to the users to avoid any confusion</li>
+                  <li>Integrated an online payment system using Chase Paymentech for a donation page</li>
+              </ul>         
+              <span class="left_container_arrow"></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end of main_text1 -->
+
+
+      <div class="main_text2">
+          <h1>03.CONTACT INFO</h1>
+          <div class="card">
+            <div class="contact_info">
+ 
+              <h2><img class = "contact_icon" src="images/email_icon.png"> Email: seoluke7203@gmail.com</h2>
+              <h2><img class = "contact_icon" src="images/phone_icon.png"> Phone: 778-951-4603</h2>
+              <h2><img class = "contact_icon" src="images/github_icon.png"> <A href = "https://github.com/seoluke7203" target="_blank"> Github: github.com/seoluke7203 </h2> </A>
+              <h2><img class = "contact_icon" src="images/linkedIn_icon.png"> <A href = "https://www.linkedin.com/in/in-ho-seo-773836142/" target="_blank"> LinkedIn: linkedin.com/in/in-ho-seo-773836142</h2> </A>
+
+            </div>
+            <div class = "contact_img">
+              <img class = "contact_my_face" src = "images/face.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
